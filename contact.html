@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+    
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(120deg, #e93daa, #0f3f4c);            margin: 0;
+        }
+
+        .contact-container {
+            text-align: center;
+        }
+
+        .contact-button, .social-button {
+            display: inline-block;
+            margin: 20px;
+            padding: 15px 25px;
+            font-size: 18px;
+            color:#06020b;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .contact-button:hover, .social-button:hover {
+            transform: scale(1.1);
+            background-color: #c12bea;
+            box-shadow: #06020b;
+        }
+
+        .contact-button img, .social-button img {
+            vertical-align: middle;
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
+            box-shadow: #250c44;
+            
+        }
+
+        .social-button {
+            background-color: #3b5998; /* Default to Facebook color */
+            
+        }
+
+        .social-button.instagram {
+            background-color: #E1306C;
+        }
+
+        .social-button.linkedin {
+            background-color: #0077B5;
+        }
+        .social-button.whatsapp{
+            background-color: darkturquoise;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <!-- Call Button -->
+        <a href="tel:+9861612399" class="contact-button"style="background-color:green;">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Call Logo">
+            Call me
+        </a>
+
+        <!-- Email Button -->
+        <a href="mailto:your-email@gmail.com" class="contact-button" style="background-color: #d44638;">
+            <img src="https://img.icons8.com/color/48/ffffff/gmail.png" alt="Gmail Logo">
+            Email me
+        </a>
+
+        <!-- Social Media Buttons -->
+        <a href="https://www.facebook.com/share/ytSzqWQ7MMxiVsHW/?mibextid=LQQJ4d" class="social-button">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook-new.png" alt="Facebook Logo">
+            Facebook
+        </a>
+        <a href="https://www.instagram.com/aavash_27?igsh=OHZ3MGVoMGlza3Jm&utm_source=qr" class="social-button instagram">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram Logo">
+            Instagram
+        </a>
+        <a href="https://www.linkedin.com/in/aavah-shrestha-524556325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-button linkedin">
+            <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn Logo">
+            LinkedIn
+        </a>
+    </div>
+</body>
+</html>
