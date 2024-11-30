@@ -165,22 +165,10 @@
                 <li>Python</li>
             </ul>
         </div>
-        <!-- Download button -->
-        <button class="download-button" onclick="downloadResume()">Download Resume</button>
+    
     </div>
 
-    <script>
-        function downloadResume() {
-            const container = document.querySelector('.container');
-            html2canvas(container).then(canvas => {
-                const imgData = canvas.toDataURL('image/jpeg');
-                const link = document.createElement('a');
-                link.href = imgData;
-                link.download = 'resume.jpg';
-                link.click();
-            });
-        }
-    </script>
+  
 </body>
 
 </html>
